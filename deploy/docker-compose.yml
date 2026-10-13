@@ -1,0 +1,16 @@
+services:
+  museforge:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      MUSEFORGE_HOST: "0.0.0.0"
+      MUSEFORGE_PORT: "8000"
+    volumes:
+      - museforge_data:/app/.museforge
+    restart: unless-stopped
+
+volumes:
+  museforge_data:

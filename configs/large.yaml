@@ -1,0 +1,27 @@
+memory:
+  max_episodes: 100000
+  max_semantic: 50000
+  token_budget: 8192
+  top_k: 16
+  half_life_hours: 72.0
+  embed_dim: 128
+  w_rel: 0.6
+  w_rec: 0.15
+  w_imp: 0.15
+  w_freq: 0.1
+  consolidate_after: 500
+
+focus:
+  max_subgoals: 12
+  staleness_threshold: 4
+  max_alternatives: 8
+  persistence_budget: 30
+  difficulty_threshold: 0.5
+
+model:
+  name: openai
+  dim: 128
+  skill: 0.5
+  api_base: "https://your-gateway/v1"
+  api_key: ""
+  model_id: "your-model"

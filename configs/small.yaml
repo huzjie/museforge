@@ -1,0 +1,24 @@
+memory:
+  max_episodes: 1000
+  max_semantic: 500
+  token_budget: 512
+  top_k: 3
+  half_life_hours: 12.0
+  embed_dim: 32
+  w_rel: 0.5
+  w_rec: 0.2
+  w_imp: 0.2
+  w_freq: 0.1
+  consolidate_after: 100
+
+focus:
+  max_subgoals: 5
+  staleness_threshold: 2
+  max_alternatives: 3
+  persistence_budget: 8
+  difficulty_threshold: 0.6
+
+model:
+  name: mock
+  dim: 32
+  skill: 0.5
